@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialised;
+}
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Stone_100: hsl(30, 54%, 90%);
+  --Stone_150: hsl(30, 18%, 87%);
+  --Stone_600: hsl(30, 10%, 34%);
+  --Stone_900: hsl(24, 5%, 18%);
+  --Brown_800: hsl(14, 45%, 36%);
+  --Rose_800: hsl(332, 51%, 32%);
+  --Rose_50: hsl(330, 100%, 98%);
+}
+body{
+  font-size: 16px;
+  font-family: "Outfit", Segoe UI;
+  font-weight: 400;
+  line-height: 1.5;
+}
+img{
+  width: 100%;
+}
+.txt{
+  padding: 1.5rem;
+}
+h1{
+  font-family: "Young Serif";
+  color: var(--Stone_900);
+  font-size: 32px ;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+p{
+  color: var(--Stone_600);
+}
+.preparation{
+  padding: 2rem;
+  background-color: var(--Rose_50);
+  margin: 1rem 0;
+  border-radius: 16px;
+}
+h2{
+  color: var(--Rose_800);
+  font-weight: 600;
+}
+ul li,
+ol li{
+  list-style-position: inside;
+  margin: .5rem 0;
+  color: var(--Stone_600);
+}
+.preparation ul li::marker{
+  color: var(--Rose_800);
+}
+.preparation span{
+  color: var(--Stone_900);
+  font-weight: 600;
+}
+h3{
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Young Serif";
+  color: var(--Brown_800);
+}
+.ingredients ul li::marker{
+  color: var(--Brown_800);
+}
+hr{
+  margin: 1.5rem 0;
+}
+.instructions ol li::marker{
+  color: var(--Brown_800);
+  font-weight: 500;
+}
+.instructions span{
+  color: var(--Stone_900);
+  font-weight: 600;
+}
+.nutrition p{
+  margin: 1rem 0;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+tr{
+  margin: 2rem 0;
+  border-bottom: 1px solid black;
+}
+table tr:last-child{
+  border-bottom: none;
+}
+table td:nth-child(1){
+  color: var(--Stone_900);
+}
+td{
+  padding: 1rem;
+}
+.colored{
+  color: var(--Brown_800);
+  font-weight: 500;
+}
+@media screen and (min-width: 768px)
+{
+  main{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--Stone_100);
+  }
+  .container{
+    width: 80%;
+    max-width: 600px;
+    background-color: var(--White);
+    border-radius: 16px;
+    margin: 2rem;
+  }
+  img{
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+}
